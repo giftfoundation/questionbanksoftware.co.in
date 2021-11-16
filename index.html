@@ -21,7 +21,6 @@
     <meta property="twitter:image" content="/images/slide1.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Question Bank Software | Question Bank Generator Software | Student Intranet Exam Software</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -270,7 +269,8 @@
             <h3 class="text-center pb-4">ENQUIRY FORM</h3>
             <div class="row justify-content-center">
                 <div class="col-md-11">
-                    <form action="https://e.genuineinfotech.com/" method="POST">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezxJndtmCF8mU6cUlXQrASbrqfXMPcBw57F2XwjYsQl3PYgA/viewform?embedded=true&entry.905373167=Question Paper" width="100%" height="1489" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <!--form action="" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
@@ -343,7 +343,7 @@
                                 <input type="text" name="_gotcha" style="display:none" />
                             </div>
                         </div>
-                    </form>
+                    </form-->
                 </div>
             </div>
         </div>
@@ -522,15 +522,6 @@
             navigationText: ["", ""],
             slideSpeed: 1000,
             autoPlay: true
-        });
-        $( "input[name='email']" ).on("change",function(){
-           $("input[name='_gotcha']").val("");        
-           grecaptcha.ready(function() {
-            grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-                /*console.log( "token \n " + token);*/
-                $("input[name='_gotcha']").val(token);
-            });
-           });
         });
     });
     // Live Chat
